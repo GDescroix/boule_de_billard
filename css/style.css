@@ -1,38 +1,47 @@
-.cercle_1, .cercle_1 .cercle_2, .cercle_1 .cercle_2 .nb, .ombre {
+.cercle_1 .cercle_2, .cercle_1 .cercle_2 .nb {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 body {
   background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .cercle_1 {
+  position: absolute;
   left: 20rem;
   width: 300px;
   height: 300px;
-  background: radial-gradient(at top right, white, grey, black, black, black);
+  background: black;
+  background: radial-gradient(farthest-corner at top right, white, black, black);
   border-radius: 50%;
   z-index: 1;
 }
 
 .cercle_1 .cercle_2 {
-  left: 4rem;
-  top: 4rem;
   width: 175px;
   height: 175px;
   background-color: white;
   border-radius: 50%;
   z-index: 2;
+  overflow: hidden;
 }
 
 .cercle_1 .cercle_2 .nb {
-  left: 3rem;
-  rotate: -30deg;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(-50%, -50%) rotate(-38deg);
+          transform: translate(-50%, -50%) rotate(-38deg);
   font-size: 150px;
   z-index: 3;
 }
 
 .ombre {
+  position: absolute;
   width: 350px;
   height: 100px;
   top: 14.5rem;
