@@ -1,0 +1,49 @@
+@import "var";
+
+%abs {
+    position: absolute;
+}
+
+body {
+    background-color: $bckgrnd;
+}
+
+.cercle_1 {
+    @extend %abs;
+    left: 20rem;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(at top right,  white, grey, black, black, black);
+    border-radius: 50%;
+    z-index: 1;
+
+    .cercle_2 {
+        @extend %abs;
+        left: 4rem;
+        top: 4rem;
+        width: 175px;
+        height: 175px;
+        background-color: $ball2;
+        border-radius: 50%;
+        z-index: 2;
+
+        .nb {
+            @extend %abs;
+            left: 3rem;
+            rotate: -30deg;
+            font-size: 150px;
+            z-index: 3;
+        }
+    }
+}
+
+
+.ombre {
+    @extend %abs;
+    width: 350px;
+    height: 100px;
+    top: 14.5rem;
+    left: 14rem;
+    background: radial-gradient(rgba(0, 0, 0, 0.8) 55%, green 70%);
+    rotate: 180deg;
+}
