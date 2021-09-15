@@ -2,7 +2,7 @@ let boule = document.querySelector(".cercle_1");
 let txt = document.querySelector(".nb");
 let phrases = ["Essaye plus tard", "Essaye encore", "Pas d'avis", "C'est pas faux", "C'est ton destin",
     "Le sort en est jeté", "On avait dit pas les BR", "Une chance sur deux", "Repose ta question",
-    "TUT TUT Fils de pute", "WordPress > All", "Bootstrap is love", "Bootstrap is life", "A demain matin 8h30",
+    "WordPress > All", "Bootstrap is love", "Bootstrap is life", "A demain matin 8h30",
     "Le point virgule bordel", "Tu t'embêtes à faire compliqué"
 ];
 let nb = 0;
